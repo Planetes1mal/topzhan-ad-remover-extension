@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "移除小站托福广告弹窗",
   "version": "1.0",
-  "description": "Removes the login/ad modal on specific zhan.com reading practice pages.",
+  "description": "移除小站教育 (top.zhan.com) 页面上的登录/推广弹窗和底部广告栏。",
   "icons": {
     "48": "icons/icon-48.png",
     "128": "icons/icon-128.png"
@@ -10,10 +10,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://top.zhan.com/toefl/read/*",
-        "https://top.zhan.com/toefl/listen/*",
-        "https://top.zhan.com/toefl/speak/*",
-        "https://top.zhan.com/toefl/write/*"
+        "https://top.zhan.com/toefl/*"
       ],
       "js": [
         "content.js"
