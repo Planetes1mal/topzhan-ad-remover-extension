@@ -1,5 +1,3 @@
-// content.js (使用 MutationObserver)
-
 console.log("Zhan Ad Remover: Content script loaded.");
 
 const modalSelector = 'div.model_mask';
