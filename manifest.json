@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Zhan.com Ad Remover",
+  "version": "1.0",
+  "description": "Removes the login/ad modal on specific zhan.com reading practice pages.",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://top.zhan.com/toefl/read/practice.html*",
+        "https://top.zhan.com/toefl/read/start.html*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

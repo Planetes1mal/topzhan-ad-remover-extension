@@ -1,0 +1,10 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Node modules (if you ever add build tools)
+# node_modules/
+
+# Build artifacts or packaged files (if you create them)
+# *.zip
+# dist/
