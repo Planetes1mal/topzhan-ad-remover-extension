@@ -20,7 +20,7 @@ let modalFound = removeElement(modalSelector, 'modal element');
 let bottomAdFound = removeElement(bottomAdSelector, 'bottom ad element');
 
 // --- 如果元素可能延迟加载，设置 MutationObserver ---
-if (!modalFound || !bottomAdFound || !sidebarAdFound) {
+if (!modalFound || !bottomAdFound) {
     console.log("Zhan Ad Remover: Initial attempt didn't find all elements, starting MutationObserver.");
 
     const observer = new MutationObserver((mutationsList, observer) => {
